@@ -7,13 +7,29 @@ const sideMenu = atom({
       {
         icon: "Home",
         pathname: "/",
-        title: "Page 1",
+        title: "Dashboard",
       },
       {
-        icon: "Home",
-        pathname: "/page-2",
-        title: "Page 2",
+        icon: "Box",
+        pathname: "/products",
+        title: "Products",
       },
+      {
+        icon: "List",
+        pathname: "/categories",
+        title: "Categories",
+      },
+      {
+        icon: "ShoppingBag",
+        pathname: "/transactions",
+        title: "Transactions",
+      },
+      {
+        icon: "Settings",
+        pathname: "/settings",
+        title: "Settings",
+      },
+
     ],
   },
 });

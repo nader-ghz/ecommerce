@@ -4,6 +4,11 @@ import SimpleMenu from "../layouts/simple-menu/Main";
 import TopMenu from "../layouts/top-menu/Main";
 import Page1 from "../views/page-1/Main";
 import Page2 from "../views/page-2/Main";
+import Dashboard from "../views/Dashboard/Main";
+import Products from "../views/Products/Main";
+import Categories from "../views/Categories/Main";
+import Transactions from "../views/Transactions/Main";
+import Settings from "../views/Settings/Main";
 
 function Router() {
   const routes = [
@@ -13,12 +18,25 @@ function Router() {
       children: [
         {
           path: "/",
-          element: <Page1 />,
+          element: <Dashboard />,
         },
         {
-          path: "page-2",
-          element: <Page2 />,
+          path: "/products",
+          element: <Products />,
         },
+        {
+          path: "/categories",
+          element: <Categories />,
+        },
+        {
+          path: "/transactions",
+          element: <Transactions />,
+        },
+        {
+          path: "/settings",
+          element: <Settings />,
+        },
+        
       ],
     },
     {
